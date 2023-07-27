@@ -96,9 +96,79 @@ Java_com_yuedao_winery_ndk_JniUtil_init(JNIEnv *env, jclass clazz) {
 extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_yuedao_winery_ndk_JniUtil_getKey(JNIEnv *env, jclass clazz) {
-    const char *DECRYPT_KEY = "cedpxfl6tfwbx3w0ke5uup1i3xjyeuhg";
+    char *a = "a";
+    char *b = "b";
+    char *c = "c";
+    char *d = "d";
+    char *e = "e";
+    char *f = "f";
+    char *g = "g";
+    char *h = "h";
+    char *i = "i";
+    char *j = "j";
+    char *k = "k";
+    char *l = "l";
+    char *m = "m";
+    char *n = "n";
+    char *o = "o";
+    char *p = "p";
+    char *q = "q";
+    char *r = "r";
+    char *s = "s";
+    char *t = "t";
+    char *u = "u";
+    char *v = "v";
+    char *w = "w";
+    char *x = "x";
+    char *y = "y";
+    char *z = "z";
+    char *i1 = "1";
+    char *i2 = "2";
+    char *i3 = "3";
+    char *i4 = "4";
+    char *i5 = "5";
+    char *i6 = "6";
+    char *i7 = "7";
+    char *i8 = "8";
+    char *i9 = "9";
+    char *i0 = "0";
+
+    //    const char *DECRYPT_KEY = "cedpxfl6tfwbx3w0ke5uup1i3xjyeu4v";
+    char ack[33] = "";
+    strcat(ack, c);
+    strcat(ack, e);
+    strcat(ack, d);
+    strcat(ack, p);
+    strcat(ack, x);
+    strcat(ack, f);
+    strcat(ack, l);
+    strcat(ack, i6);
+    strcat(ack, t);
+    strcat(ack, f);
+    strcat(ack, w);
+    strcat(ack, b);
+    strcat(ack, x);
+    strcat(ack, i3);
+    strcat(ack, w);
+    strcat(ack, i0);
+    strcat(ack, k);
+    strcat(ack, e);
+    strcat(ack, i5);
+    strcat(ack, u);
+    strcat(ack, u);
+    strcat(ack, p);
+    strcat(ack, i1);
+    strcat(ack, i);
+    strcat(ack, i3);
+    strcat(ack, x);
+    strcat(ack, j);
+    strcat(ack, y);
+    strcat(ack, e);
+    strcat(ack, u);
+    strcat(ack, i4);
+    strcat(ack, v);
     if (auth) {
-        return env->NewStringUTF(DECRYPT_KEY);
+        return env->NewStringUTF(ack);
     } else {// 你没有权限，验证没有通过。
         return env->NewStringUTF("You don't have permission, the verification didn't pass.");
     }
